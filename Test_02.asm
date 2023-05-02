@@ -1,0 +1,8 @@
+; Testing
+MOV AL,02H 
+MOV BL,01H
+MOV CL,0AH
+
+LOOP : MUL AL
+       INC BL 
+HLT
