@@ -1,0 +1,13 @@
+; Lab2 - Objective 3-1
+; Swapping of Nibble of Data-1
+MOV AX,0002H
+MOV DS,AX
+MOV SI,3000H
+MOV AL,[SI]
+MOV BL,AL
+SHR AL,04H
+SHR BL,04H
+ADD AL,BL
+INC SI
+MOV [SI] , AL
+HLT
